@@ -1,0 +1,67 @@
+.carousel-container {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Kreon', sans-serif; /* Change font to Kreon */
+  }
+  .carousel-container h1 {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+  }
+  
+  .slide {
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smoother slide changes */
+  }
+  
+  .icon-container {
+    background-color: linear-gradient(to bottom, #000257, #ffffff);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  }
+  
+  .icon-container h2 {
+    color: #fff; /* Change text color to white */
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Add transition for text color change */
+  }
+  
+  .slick-dots li button:before {
+    color: #0099ff; /* Change color of dot indicators */
+    transition: color 0.3s ease; /* Add transition for dot color change */
+  }
+  
+  .slick-prev, .slick-next {
+    color: #3498db; /* Change color of prev/next arrows */
+    transition: color 0.3s ease; /* Add transition for arrow color change */
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #2980b9; /* Change hover color of prev/next arrows */
+  }
+  
+  .slide:hover {
+    transform: scale(1.05); /* Scale up on hover for a subtle zoom effect */
+  }
+  
+  .icon-container:hover h2 {
+    color: #eee; /* Lighten text color on hover */
+  }
+  
+  .icon-container:hover {
+    animation: pulse 0.5s infinite alternate; /* Add pulsating animation on hover */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .icon-container {
+      width: 100%; /* Set width to 100% for mobile view */
+      margin-bottom: 20px; /* Add margin between icons */
+    }
+    .carousel-container h1 {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+      }
+  }

@@ -1,0 +1,17 @@
+
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #000000, #00026d);
+}
+/* Mobile View CSS */
+@media (max-width: 768px) {
+  .app-container {
+      width: 100%;
+      padding: 50px 0;
+      overflow-x: hidden; /* Ensure no horizontal scrolling */
+  }
+}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
